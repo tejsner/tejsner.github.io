@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <title>Er det fredag?</title>
+  </head>
+  <body>
+    <h1>Er det fredag?</h1>
+    <h1 id="result"></h1>
+    <script>
+      var now = new Date;
+      var elem = document.getElementById("result");
+      if (now.getDay() == 5) {
+          elem.innerHTML = "Ja!";
+          elem.style.color = "green";
+      } else {
+          elem.innerHTML = "Nej!";
+          elem.style.color = "red";
+      }
+    </script>
+  </body>
+</html>
